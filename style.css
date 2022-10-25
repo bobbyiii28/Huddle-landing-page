@@ -1,0 +1,155 @@
+/* reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+.visually-hidden {
+  position: absolute;
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* typography */
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  color: #fff;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #fff;
+}
+
+/* mobile layout */
+
+body {
+  background-image: url(images/bg-mobile.svg);
+  background-color: #684bb1;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header img {
+  margin: 2.3875rem 13.4375rem 4.3625rem 2.5rem;
+}
+
+.logo {
+  max-width: 7.5rem;
+  max-height: 1.1875rem;
+}
+
+.mock-up {
+  max-width: 18.5rem;
+  max-height: 13.0625rem;
+}
+
+.hero {
+  padding-left: 2.5rem;
+  padding-right: 2.4375rem;
+  padding-bottom: 3.75rem;
+  display: flex;
+  justify-content: center;
+}
+
+.content-registration {
+  margin-left: 2.25rem;
+  margin-right: 2.1875rem;
+  text-align: center;
+}
+
+.register {
+  padding: 0.7056rem 4.6963rem 0.6694rem 4.7412rem;
+  border-radius: 1.25rem;
+  color: #684bb1;
+}
+
+button:hover {
+  background: #e880e8;
+}
+
+/* desktop layout */
+
+@media (min-width: 1250px) {
+  body {
+    background-image: url(images/bg-desktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  main {
+    display: flex;
+  }
+
+  header img {
+    margin-left: 5rem;
+    margin-top: 4rem;
+    margin-bottom: 6.5rem;
+  }
+
+  .logo {
+    max-width: 12.5rem;
+    max-height: 2rem;
+  }
+
+  .mock-up {
+    max-width: 43.5rem;
+    max-height: 30.8125rem;
+    margin-right: 3.6875rem;
+  }
+
+  .content-registration {
+    max-width: 32.5rem;
+    max-height: 14.0625rem;
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    line-height: 3.75rem;
+  }
+
+  p {
+    font-size: 1.125rem;
+    line-height: 1.6875rem;
+  }
+}
